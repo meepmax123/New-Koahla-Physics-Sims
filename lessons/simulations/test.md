@@ -2,6 +2,7 @@
 layout: page
 title: Projectile Simulation
 ---
+# Test simulation
 This simulation was written by Gemini to test the implementation of python code in this website.
 All future python simulations will be written without AI and this one will be deleted.
 A similar experiment will be performed with the C/C++ simulations.
