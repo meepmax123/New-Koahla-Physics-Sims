@@ -5,4 +5,4 @@ nav_order: 3
 ---
 # Numerical and Visual Physics Simulations
 
-* [Testing](test.html)
+* [Testing](test.md)
