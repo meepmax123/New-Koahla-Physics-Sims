@@ -11,6 +11,6 @@ Simulations written in C++ and Python, code and complementary lessons found with
 
 This entire website is free and [open source](https://github.com/meepmax123/New-Koahla-Physics-Sims).
 
-* [Lessons](lessons/index.md)
-* [Simulations](lessons/simulations/index.md)
+* [Lessons](lessons.md)
+* [Simulations](simulations.md)
 
