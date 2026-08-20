@@ -1,10 +1,13 @@
 title: Koahla Physics Sims
 remote_theme: just-the-docs/just-the-docs
+
 collections:
   lessons:
     output: true
+    permalink: "/lessons/test/"
   simulations:
     output: true
+    permalink: "/simulations/test/"
 
 just_the_docs:
   collections:
