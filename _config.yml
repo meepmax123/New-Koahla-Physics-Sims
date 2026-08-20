@@ -1,6 +1,9 @@
 title: New Koahla Physics Sims
 color_scheme: dark
 
+# THIS IS THE MISSING LINE THAT BRINGS THE SIDEBAR BACK!
+remote_theme: just-the-docs/just-the-docs
+
 # Enable Jekyll Collections
 collections:
   simulations:
