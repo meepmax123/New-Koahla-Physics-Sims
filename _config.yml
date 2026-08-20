@@ -1,19 +1,21 @@
-title: Koahla Physics Sims
-remote_theme: just-the-docs/just-the-docs
+title: New Koahla Physics Sims
+color_scheme: dark
 
+# Enable Jekyll Collections
 collections:
-  lessons:
-    output: true
-    permalink: "/lessons/test/"
   simulations:
     output: true
-    permalink: "/simulations/test/"
+    permalink: /:collection/:path/
+  lessons:
+    output: true
+    permalink: /:collection/:path/
 
+# Configure Just the Docs Dropdown Menus
 just_the_docs:
   collections:
-    lessons:
-      name: Lessons
-      nav_fold: true
     simulations:
       name: Simulations
+      nav_fold: true
+    lessons:
+      name: Lessons
       nav_fold: true
