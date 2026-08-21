@@ -23,15 +23,14 @@ def fluid_sim():
 
 # --- SIMULATION 2: Double Pendulum ---
 @app.route('/simulations/genrel/mercury', methods=['POST'])
-def pendulum_sim():
+def mercury_sim():
     data = request.json or {}
-    length = float(data.get('length', 1.0))
-    angle = float(data.get('angle', 45.0))
+    scalar = float(data.get('scalar', 1.0))
     
-    # Chaos/Pendulum physics math...
-    period = 2 * np.pi * np.sqrt(length / 9.81)
+    # Fluid physics math...
+    result_value = scalar  # Example calculation
     
-    return jsonify({"result": f"Oscillation Period: {period:.2f} seconds"})
+    return jsonify({"result": f"Fluid Flow Speed: {result_value:.2f} m/s"})
 
 
 # --- SIMULATION 3: Orbital Mechanics ---
