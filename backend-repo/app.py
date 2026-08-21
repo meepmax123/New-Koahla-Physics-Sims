@@ -1,6 +1,8 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-import numpy as np
+
+# Import the specific function from physics/fluid.py
+from physics.fluid import run_fluid_simulation
 
 app = Flask(__name__)
 CORS(app)
@@ -9,43 +11,14 @@ CORS(app)
 def health():
     return jsonify({"status": "ok"})
 
-# --- SIMULATION 1: Fluid Dynamics ---
 @app.route('/simulations/fluids/test', methods=['POST'])
 def fluid_sim():
     data = request.json or {}
-    viscosity = float(data.get('viscosity', 1.0))
     
-    # Fluid physics math...
-    result_value = viscosity * 9.81  # Example calculation
+    # Run simulation logic from external file
+    simulation_result = run_fluid_simulation(data)
     
-    return jsonify({"result": f"Fluid Flow Speed: {result_value:.2f} m/s"})
-
-
-# --- SIMULATION 2: Double Pendulum ---
-@app.route('/simulations/genrel/mercury', methods=['POST'])
-def mercury_sim():
-    data = request.json or {}
-    scalar = float(data.get('scalar', 1.0))
-    
-    # Fluid physics math...
-    result_value = scalar  # Example calculation
-    
-    return jsonify({"result": f"Scalar: {result_value:.2f}"})
-
-
-# --- SIMULATION 3: Orbital Mechanics ---
-@app.route('/simulations/orbit', methods=['POST'])
-def orbit_sim():
-    data = request.json or {}
-    mass = float(data.get('mass', 5.97e24)) # Earth mass default
-    altitude = float(data.get('altitude', 400000)) # 400 km
-    
-    # Orbital velocity math...
-    G = 6.674e-11
-    R = 6371000 + altitude
-    v = np.sqrt(G * mass / R)
-    
-    return jsonify({"result": f"Required Orbital Speed: {v:.2f} m/s"})
+    return jsonify(simulation_result)
 
 if __name__ == "__main__":
     app.run()
