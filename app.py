@@ -10,7 +10,7 @@ def health():
     return jsonify({"status": "ok"})
 
 # --- SIMULATION 1: Fluid Dynamics ---
-@app.route('/simulations/fluid', methods=['POST'])
+@app.route('/simulations/fluids/test', methods=['POST'])
 def fluid_sim():
     data = request.json or {}
     viscosity = float(data.get('viscosity', 1.0))
@@ -22,7 +22,7 @@ def fluid_sim():
 
 
 # --- SIMULATION 2: Double Pendulum ---
-@app.route('/simulations/pendulum', methods=['POST'])
+@app.route('/simulations/genrel/mercury', methods=['POST'])
 def pendulum_sim():
     data = request.json or {}
     length = float(data.get('length', 1.0))
