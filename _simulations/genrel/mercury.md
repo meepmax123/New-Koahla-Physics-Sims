@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Mercury Precession
-parent: Fluids
+parent: General Relativity
 nav_order: 1
 ---
 
