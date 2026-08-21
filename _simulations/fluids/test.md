@@ -16,7 +16,7 @@ nav_order: 1
 <script>
 async function runFluidSim() {
     let visc = document.getElementById("viscosity").value;
-    let url = "https://your-app-name.onrender.com/simulate"; 
+    let url = "https://new-koahla-physics-sims.onrender.com/simulate"; 
     
     let res = await fetch(url, {
         method: "POST",
