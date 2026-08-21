@@ -30,7 +30,7 @@ def mercury_sim():
     # Fluid physics math...
     result_value = scalar  # Example calculation
     
-    return jsonify({"result": f"Fluid Flow Speed: {result_value:.2f} m/s"})
+    return jsonify({"result": f"Scalar: {result_value:.2f}"})
 
 
 # --- SIMULATION 3: Orbital Mechanics ---
