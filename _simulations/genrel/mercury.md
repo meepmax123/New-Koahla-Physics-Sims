@@ -15,6 +15,7 @@ nav_order: 1
 
 <script>
 async function runSim() {
+    document.getElementById("result").innerText = "Running";
     let visc = document.getElementById("scalar").value;
     let url = "https://new-koahla-physics-sims.onrender.com/simulate"; 
     
