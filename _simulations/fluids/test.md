@@ -15,7 +15,7 @@ nav_order: 1
 
 <script>
 async function runFluidSim() {
-    document.getElementById("result").innerText = "running";
+    document.getElementById("result").innerText = "Running";
     let visc = document.getElementById("viscosity").value;
     let url = "https://new-koahla-physics-sims.onrender.com/simulate"; 
     
