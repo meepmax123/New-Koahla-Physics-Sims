@@ -19,6 +19,14 @@ def fluid_sim():
     simulation_result = run_fluid_simulation(data)
     
     return jsonify(simulation_result)
+@app.route('/simulations/genrel/mercury', methods=['POST'])
+def mercurygenrel_sim():
+    data = request.json or {}
+    
+    # Run simulation logic from external file
+    simulation_result = run_mercurygenrel_simulation(data)
+    
+    return jsonify(simulation_result)
 
 if __name__ == "__main__":
     app.run()
