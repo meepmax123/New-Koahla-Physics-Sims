@@ -3,6 +3,7 @@ from flask_cors import CORS
 
 # Import the specific function from physics/fluid.py
 from physics.fluid import run_fluid_simulation
+from physics.mercurygenrel import run_mercurygenrel_simulation
 
 app = Flask(__name__)
 CORS(app)
