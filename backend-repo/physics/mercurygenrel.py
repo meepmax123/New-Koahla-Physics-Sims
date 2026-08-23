@@ -115,7 +115,7 @@ def run_mercurygenrel_simulation(data):
     #print(len(perihelionAngles))
     #print(state)
 
-    return 180/pi*perihelionAngles[1]
-    # return {
-    #     "result": f"Peak Velocity: {max_vel:.4f} m/s | Avg Velocity: {avg_vel:.4f} m/s"
-    # }
+    # return 180/pi*perihelionAngles[1]
+    return {
+        "result": (180/pi*perihelionAngles[1])
+    }
