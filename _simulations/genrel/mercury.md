@@ -17,7 +17,7 @@ nav_order: 1
 async function runSim() {
     document.getElementById("result").innerText = "Running";
     let visc = document.getElementById("scalar").value;
-    let url = "https://new-koahla-physics-sims-1.onrender.com/simulations/genrel/mercury"; 
+    let url = "https://new-koahla-physics-sims-1.onrender.com/simulate"; 
     
     let res = await fetch(url, {
         method: "POST",
