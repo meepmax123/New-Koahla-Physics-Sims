@@ -110,7 +110,7 @@ def run_mercurygenrel_simulation(data):
       state=r,vr,th,vt
     
     
-    for i in range(len(perihelionAngles)-1):
+    #for i in range(len(perihelionAngles)-1):
       #print(180/pi*perihelionAngles[i])
     #print(len(perihelionAngles))
     #print(state)
