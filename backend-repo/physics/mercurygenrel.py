@@ -1,6 +1,6 @@
 import math
-
 def run_mercurygenrel_simulation(data)
-    return {
-        "result": (1+1)
-    }
+    return 2
+    #return {
+    #    "result": (1+1)
+    #}
