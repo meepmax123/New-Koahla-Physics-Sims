@@ -8,6 +8,10 @@ from physics.mercurygenrel import run_mercurygenrel_simulation
 app = Flask(__name__)
 CORS(app)
 
+@app.route('/')
+def home():
+    return "Physics Simulator Backend is running!", 200
+
 @app.route('/health', methods=['GET'])
 def health():
     return jsonify({"status": "ok"})
