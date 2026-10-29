@@ -8,3 +8,5 @@ sympy
 pandas
 pint
 astropy
+math
+time
